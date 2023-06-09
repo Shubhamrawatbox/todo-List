@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+.App{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2f74c0;
+  font-family: 'Neucha', cursive;
+}
+
+.heading{
+text-transform: uppercase;
+font-size: 40px;
+color: #fff;
+z-index: 1;
+text-align: center;
+font-size: 35px;
+}
+
+.input-field{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 90%;
+}
+
+.input-field .input_box{
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  box-shadow: inset 0 0 5px #000;
+}
+
+.input-field .input_box:focus{
+  box-shadow: 0 0 10px 1000px rgba(0,0,0,0.5);
+}
+
+.input-field .input_submit{
+  position: absolute;
+  right: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: #197ae3;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 10px #000;
+  transition: 0.3s all;
+}
+
+.input_submit:hover{
+  background-color: #2f74c0;
+}
+
+.input_submit:active{
+  transform: scale(1.3);
+  box-shadow: 0 0 5px #000;
+}
+
+.todos{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.todos .singleCard{
+  width: 50%;
+  padding: 20px 15px;
+  background: rgb(199, 199, 16);
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos .singleCard .icon{
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.edit_input{
+  border: none;
+    outline: none;
+    padding: 7px 5px;
+    width: 60%;
 }

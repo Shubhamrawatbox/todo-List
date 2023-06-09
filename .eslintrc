@@ -1,0 +1,13 @@
+// {
+//     "extends": [
+//         "plugin:vue/recommended",
+//         "@vue/standard"
+//       ],
+//       "rules": {
+//         // examples of vue rule
+//         "vue/keyword-spacing": "warn",
+//         "no-unused-expressions": "off",
+//         "@typescript-eslint/no-unused-expressions": "error"
+//       },
+//   "plugins": ["vue"]
+// }
